@@ -1,0 +1,14 @@
+<h1>Books</h1>
+
+{{outlet}}
+
+<ul>
+  {{#each book in model}}
+    <li>{{book.title}} by {{book.authorName}}</li>
+  {{else}}
+    <li>There are no books.</li>
+  {{/each}}
+</ul>
+
+
+
